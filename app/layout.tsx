@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import Head from "next/head";
+import { ThemeProvider } from "@/components/theme-provider";
 
 
 
@@ -16,13 +17,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-       <Head>
-          <link rel="icon" href="/Elipse tech.png"/>
-        </Head>
-      <body className="newFont">
+    <html lang="en" suppressHydrationWarning>
+    <head />
+    <body className="newFont dark:bg-black bg-white">
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
         {children}
-        </body>
-    </html>
+      </ThemeProvider>
+    </body>
+  </html>
   );
 }
