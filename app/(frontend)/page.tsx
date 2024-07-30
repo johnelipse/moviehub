@@ -5,9 +5,10 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className='background2 px-4 py-4  w-screen h-screen lg:overflow-x-hidden' >
+    <div className='background2 px-4 py-4  w-screen h-screen lg:overflow-x-hidden overflow-y-hidden' >
       <Navbar/>
-            <div className='text-center h-screen lg:px-80 md:px-10 px-4 flex flex-col items-center justify-center'>
+            <div className='text-center lg:mt-[13%]  
+            md:mt-[47%] mt-[34%] lg:px-80 md:px-10 px-4 flex flex-col items-center justify-center'>
         <h1 className="md:text-4xl text-[1.8rem] font-extrabold lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-yellow-300 to-green-400">Welcome to moviehub</h1>
       
         <p className="leading-7 [&:not(:first-child)]:mt-8 text-white">Discover a World of Movies and dive into our extensive library of movies, from timeless classics to the latest blockbusters. Whether you are a fan of action, romance, comedy, or drama, moviehub has something for everyone. Sign up now and start exploring moviehub. Your next favorite movie is just a click away!</p>
