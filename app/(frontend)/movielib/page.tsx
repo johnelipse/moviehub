@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className='bg-white dark:bg-black  px-4 py-4 w-screen h-screen'>
+    <div className='bg-white dark:bg-[#020817] px-4 py-4 w-screen h-screen overflow-x-hidden'>
      <Nav2/>
-    </div>
+   </div>
   )
 }

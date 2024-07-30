@@ -18,13 +18,15 @@ export function Togglebtn() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon">
-          <SunMediumIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <SunMoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+        <Button variant="outline" size="sm">
+          <SunMediumIcon className="lg:h-[1.2rem] lg:w-[1.2rem] md:h-[1.2rem] md:w-[1.2rem] h-[1rem]
+           w-[1rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <SunMoonIcon className="absolute lg:h-[1.2rem] lg:w-[1.2rem] md:h-[1.2rem] md:w-[1.2rem] h-[1rem]
+           w-[1rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="center">
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light
         </DropdownMenuItem>
