@@ -1,9 +1,10 @@
+import { Dashboard } from '@/components/admin/dashboard'
 import React from 'react'
 
 export default function page() {
   return (
     <div>
-      <p>this the dashboard....</p>
+     <Dashboard/>
     </div>
   )
 }

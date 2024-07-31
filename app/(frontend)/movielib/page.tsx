@@ -7,7 +7,7 @@ export default function page() {
   return (
     <div className='bg-white dark:bg-[#020817] px-4 py-4 w-screen h-screen overflow-x-hidden'>
      <Nav2/>
-     <div className='mt-20'>
+     <div className='lg:mt-20 md:mt-20 mt-[6.5rem]'>
       <App/>
      </div>
    </div>

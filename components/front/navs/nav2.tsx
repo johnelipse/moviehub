@@ -6,8 +6,8 @@ import React from 'react'
 
 export default function Nav2() {
   return (
-  <div>
-      <div className='flex justify-between items-center w-screen py-2 lg:px-8 md:px-4 px-4 fixed top-0 left-0 bg-white/30 backdrop-blur-sm dark:bg-transparent/30'>
+  <div className='z-[999999]'>
+      <div className='z-[999999] flex justify-between items-center w-screen py-2 lg:px-8 md:px-4 px-4 fixed top-0 left-0 bg-white/30 backdrop-blur-sm dark:bg-transparent/30'>
       <div>
       <Link href="/">
       <Image className='w-8 h-8' width={508} height={501} src="/Elipse tech.png" alt="logo" />
