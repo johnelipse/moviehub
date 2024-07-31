@@ -36,7 +36,7 @@ export function Dashboard() {
             <span className="sr-only">Acme Inc</span>
           </Link>
           <Link
-            href="#"
+            href="/trial"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
             Dashboard
