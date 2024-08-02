@@ -8,7 +8,7 @@ export default function page() {
   return (
     <div className='overflow-x-hidden'>
     
-     <div className=''>
+     <div className='overflow-x-hidden'>
      <Main/>
        </div>
     </div>

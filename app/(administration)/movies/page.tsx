@@ -8,7 +8,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className='lg:flex md:flex block gap-4  px-4 x'>
+    <div className='lg:flex md:flex block gap-4  px-4  overflow-x-hidden'>
    <div className='w-[20%] h-auto lg:block md:block hidden  '>
     <Image className='w-full h-full  object-cover' width={600} height={800} src="/men.jpg" alt="image" />
    </div>

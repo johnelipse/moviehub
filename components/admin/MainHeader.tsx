@@ -12,7 +12,7 @@ import { Togglebtn } from '../togglebtn'
 
 export default function MainHeader() {
   return (
-    <header className="bg-white/30 backdrop-blur-sm dark:bg-transparent/30 sticky z-[9999] top-0 flex h-16 items-center gap-4 border-b  px-4 md:px-6">
+    <header className="bg-white/30 backdrop-blur-sm dark:bg-transparent/30 sticky z-[9999] top-0 flex h-16 items-center gap-4 border-b  px-4 md:px-6 overflow-x-hidden overflow-y-hidden">
     <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
         <Link
         href="/dashboard"
