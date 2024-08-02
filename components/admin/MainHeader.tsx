@@ -12,7 +12,7 @@ import { Togglebtn } from '../togglebtn'
 
 export default function MainHeader() {
   return (
-    <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
+    <header className="bg-white/30 backdrop-blur-sm dark:bg-transparent/30 sticky z-[9999] top-0 flex h-16 items-center gap-4 border-b  px-4 md:px-6">
     <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
         <Link
         href="/dashboard"
@@ -20,26 +20,16 @@ export default function MainHeader() {
       >
         Dashboard
       </Link>
-      <Link
-        href="/trial"
-        className="text-muted-foreground transition-colors hover:text-foreground"
-      >
-        Orders
-      </Link>
+     
       <Link
         href="/movies"
         className="text-muted-foreground transition-colors hover:text-foreground"
       >
-        Products
+      Movies
       </Link>
+     
       <Link
-        href="/movies"
-        className="text-muted-foreground transition-colors hover:text-foreground"
-      >
-        Customers
-      </Link>
-      <Link
-        href="#"
+        href="/settings"
         className="text-foreground transition-colors hover:text-foreground"
       >
         Settings
@@ -66,30 +56,18 @@ export default function MainHeader() {
             <span className="sr-only">Acme Inc</span>
           </Link>
           <Link
-            href="#"
+            href="/dashboard"
             className="text-muted-foreground hover:text-foreground"
           >
             Dashboard
           </Link>
-          <Link
-            href="#"
+            <Link
+            href="/movies"
             className="text-muted-foreground hover:text-foreground"
           >
-            Orders
+            Movies
           </Link>
-          <Link
-            href="#"
-            className="text-muted-foreground hover:text-foreground"
-          >
-            Products
-          </Link>
-          <Link
-            href="#"
-            className="text-muted-foreground hover:text-foreground"
-          >
-            Customers
-          </Link>
-          <Link href="#" className="hover:text-foreground">
+          <Link href="/settings" className="hover:text-foreground">
             Settings
           </Link>
         </nav>

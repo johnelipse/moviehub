@@ -1,7 +1,9 @@
+"use client"
 import {
   Bell,
   Home,
   LineChart,
+  Monitor,
   Package,
   Package2,
   Settings,
@@ -20,63 +22,55 @@ import {
   CardTitle,
 } from "../ui/card";
 
+
 export default function Sidebar() {
+
+
   return (
-    <div className="hidden bg-white md:block">
-      <div className="flex h-full max-h-screen flex-col gap-2">
-        <div className="flex h-14 items-center  px-4 lg:h-[60px] lg:px-6">
-          <Link href="/" className="flex items-center font-extrabold gap-2 ">
-            <Package2 className="h-6 w-6" />
-            <span className="">Project Management</span>
-          </Link>
-        </div>
-        <div className="flex-1">
-          <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
-            <Link
-              href="/dashboard"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-            >
-              <Home className="h-4 w-4" />
-              Dashboard
-            </Link>
-            <Link
-              href="/trial"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-            >
-              <ShoppingCart className="h-4 w-4" />
-              Orders
+    <div className="hidden bg-white dark:bg-[#020817] md:block fixed   border-solid border-x border-gray-200 border-[1px] dark:border-gray-900">
+     <div className="flex-1 mt-8">
+            <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
+              <Link
+                href="/dashboard"
+                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all dark:text-white hover:text-primary mb-12"
+              >
+                <Home className="h-4 w-4" />
+                Dashboard
               </Link>
-            <Link
-              href="/movies"
-              className="flex items-center gap-3  text-primary transition-all "
-            >
-              <Package className="h-4 w-4" />
-              Movie List
-            </Link>
-            <Link
-              href="/customerList"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-            >
-              <Users className="h-4 w-4" />
-              Customer List
-            </Link>
-            <Link
-              href="/analytics"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-            >
-              <LineChart className="h-4 w-4" />
-              Analytics
-            </Link>
-            <Link
-              href="/settings"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-            >
-              <Settings className="h-4 w-4" />
-              settings
-            </Link>
-          </nav>
+              <Link
+                href="#"
+                className="flex dark:text-white items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+              >
+                <ShoppingCart className="h-4 w-4" />
+                Orders
+              </Link>
+             <div className="flex justify-between items-center">
+             <Link
+                href="/movies"
+                className="flex items-center dark:text-white gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+              >
+                <Monitor className="h-4 w-4" />
+             Movies
+              </Link>
+              <p>116</p>
+             </div>
+                <Link
+                href="/trial"
+                className={"flex items-center gap-3 rounded-lg px-3 dark:text-white py-2 text-muted-foreground transition-all hover:text-primary"} 
+              >
+                <Users className="h-4 w-4" />
+                Customers
+              </Link>
+              <Link
+                href="#"
+                className="flex dark:text-white items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+              >
+                <LineChart className="h-4 w-4" />
+                Analytics
+              </Link>
+            </nav>
+          </div>
         </div>
-        </div>
-    </div>
+   
   );
 }

@@ -8,7 +8,7 @@ import { MoreHorizontal } from 'lucide-react'
 
 export default function List() {
   return (
-    <div className='flex justify-between items-center mt'>
+    <div className='flex justify-between items-center border-b-[1px] border-gray-200 py-4 dark:border-gray-900'>
     <div className='flex items-center gap-3'>
     <div className='lg:w-[3.5rem] lg:h-[3.5rem] md:w-[3.5rem] md:h-[3.5rem] w-[
     2.5rem] h-[2.5rem] rounded-md'>
